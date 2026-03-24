@@ -537,6 +537,24 @@ header a:hover{
         url(media/Borderlands.webp);
 }
 
+.carta:nth-child(64){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/justdance.png);
+}
+
+.carta:nth-child(65){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/persona5.png);
+}
+
+.carta:nth-child(66){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/xenoblade.png);
+}
+
 #caracteristicas .container{
     text-align: center;
     padding: 200px 12px;
