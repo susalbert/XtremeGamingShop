@@ -555,6 +555,42 @@ header a:hover{
         url(media/xenoblade.png);
 }
 
+.carta:nth-child(67){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/mariogolf.jpg);
+}
+
+.carta:nth-child(68){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/darksouls1.jpg);
+}
+
+.carta:nth-child(69){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/forest.jpg);
+}
+
+.carta:nth-child(70){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/darksouls2.jpg);
+}
+
+.carta:nth-child(71){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/eldenring.jpg);
+}
+
+.carta:nth-child(72){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/blackmyth.jpg);
+}
+
 #caracteristicas .container{
     text-align: center;
     padding: 200px 12px;
