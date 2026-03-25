@@ -771,6 +771,79 @@ header a:hover{
         url(media/pokemonza.jpg);
 }
 
+.carta:nth-child(103){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/acnh.jpg);
+}
+
+.carta:nth-child(104){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/pokopia.png);
+}
+
+.carta:nth-child(105){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/mii.webp);
+}
+
+.carta:nth-child(106){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/sonsforest.webp);
+}
+
+.carta:nth-child(107){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/battlefieldv.png);
+}
+
+.carta:nth-child(108){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/cyberpunk2077.jpg);
+}
+
+.carta:nth-child(109){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/tsushima.jpg);
+}
+
+.carta:nth-child(110){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/peak.jpg);
+}
+
+.carta:nth-child(111){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/haloinf.png);
+}
+
+.carta:nth-child(112){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/dmc.jpg);
+}
+
+.carta:nth-child(113){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/dkcr.jpg);
+}
+
+.carta:nth-child(114){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/hollow.png);
+}
+
+
 
 #caracteristicas .container{
     text-align: center;
