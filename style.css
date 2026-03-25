@@ -324,7 +324,7 @@ header a:hover{
 .carta:nth-child(28){
     background-image:
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url(media/tennisfever.jpg);
+        url(media/tennisfever.webp);
 }
 
 .carta:nth-child(29){
@@ -366,7 +366,7 @@ header a:hover{
 .carta:nth-child(35){
     background-image:
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url(media/horizon.png);
+        url(media/horizon.webp);
 }
 
 .carta:nth-child(36){
@@ -456,7 +456,7 @@ header a:hover{
 .carta:nth-child(50){
     background-image:
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url(media/crossworlds.jpg);
+        url(media/crossworlds.webp);
 }
 
 .carta:nth-child(51){
@@ -590,6 +590,187 @@ header a:hover{
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
         url(media/blackmyth.jpg);
 }
+
+.carta:nth-child(73){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/mania.jpg);
+}
+
+.carta:nth-child(74){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/battleleague.jpg);
+}
+
+.carta:nth-child(75){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/mariovsdonkey.jpg);
+}
+
+.carta:nth-child(76){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/dkcountry.jpg);
+}
+
+.carta:nth-child(77){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/soniccolours.jpg);
+}
+
+.carta:nth-child(78){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/mariorabbids.webp);
+}
+
+.carta:nth-child(79){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/tennisaces.webp);
+}
+
+.carta:nth-child(80){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/re5.jpg);
+}
+
+.carta:nth-child(81){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/superstars.jpg);
+}
+
+.carta:nth-child(82){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/re6.jpg);
+}
+
+.carta:nth-child(83){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/pikmin1.jpg);
+}
+
+.carta:nth-child(84){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/ghost.jpg);
+}
+
+.carta:nth-child(85){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/supermarioparty.webp);
+}
+
+.carta:nth-child(86){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/pikmin2.jpg);
+}
+
+.carta:nth-child(87){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/mw3.jpg);
+}
+
+.carta:nth-child(88){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/kirbystarallies.jpg);
+}
+
+.carta:nth-child(89){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/pikmin3.jpg);
+}
+
+.carta:nth-child(90){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/revi.png);
+}
+
+.carta:nth-child(91){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/rabbids2.jpg);
+}
+
+.carta:nth-child(92){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/metroiddread.jpg);
+}
+
+.carta:nth-child(93){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/rebio.jpg);
+}
+
+.carta:nth-child(94){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/splatoon2.jpg);
+}
+
+.carta:nth-child(95){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/nsb.jpg);
+}
+
+.carta:nth-child(96){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/mk8.jpg);
+}
+
+.carta:nth-child(97){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/minecraftlegends.jpg);
+}
+
+.carta:nth-child(98){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/shield.jpg);
+}
+
+.carta:nth-child(99){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/sword.jpg);
+}
+
+.carta:nth-child(100){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/diamond.jpg);
+}
+
+.carta:nth-child(101){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/pearl.jpg);
+}
+
+.carta:nth-child(102){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/pokemonza.jpg);
+}
+
 
 #caracteristicas .container{
     text-align: center;
