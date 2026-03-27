@@ -843,6 +843,419 @@ header a:hover{
         url(media/hollow.png);
 }
 
+.carta:nth-child(115){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/Yoshi.jpg);
+}
+
+.carta:nth-child(116){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/peach.jpg);
+}
+
+.carta:nth-child(117){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/yakuza.jpg);
+}
+
+.carta:nth-child(118){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/meatboy.jpg);
+}
+
+.carta:nth-child(119){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/guitarhero.png);
+}
+
+.carta:nth-child(120){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/borderlands3.jpg);
+}
+
+.carta:nth-child(121){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/primere.jpg);
+}
+
+.carta:nth-child(122){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/mortalkombat.webp);
+}
+
+.carta:nth-child(123){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/bayonetta.jpg);
+}
+
+.carta:nth-child(124){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/bayonetta2.png);
+}
+
+.carta:nth-child(125){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/bayonetta3.webp);
+}
+
+.carta:nth-child(126){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/helpwanted.jpg);
+}
+
+.carta:nth-child(127){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/helpwanted2.webp);
+}
+
+.carta:nth-child(128){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/securitybreach.jpg);
+}
+
+.carta:nth-child(129){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/sotm.webp);
+}
+
+.carta:nth-child(130){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/itp.webp);
+}
+
+.carta:nth-child(131){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/kirbybuffet.jpg);
+}
+
+.carta:nth-child(132){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/kirbyfighters.jpg);
+}
+
+.carta:nth-child(133){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/airriders.webp);
+}
+
+.carta:nth-child(134){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/allstars.jpg);
+}
+
+.carta:nth-child(135){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/galaxy.jpg);
+}
+
+.carta:nth-child(136){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/galaxy2.webp);
+}
+
+.carta:nth-child(137){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/astro.jpg);
+}
+
+.carta:nth-child(138){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/monkey.jpg);
+}
+
+.carta:nth-child(139){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/kingdomiv.webp);
+}
+
+.carta:nth-child(140){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/moveit.jpg);
+}
+
+.carta:nth-child(141){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/getit.jpg);
+}
+
+.carta:nth-child(142){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/1-2.jpg);
+}
+
+.carta:nth-child(143){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/e1-2.jpg);
+}
+
+.carta:nth-child(144){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/switchsports.jpg);
+}
+
+.carta:nth-child(145){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/assassin.png);
+}
+
+.carta:nth-child(146){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/deadspace.jpg);
+}
+
+.carta:nth-child(147){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/shadow.jpg);
+}
+
+.carta:nth-child(148){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/indiana.webp);
+}
+
+.carta:nth-child(149){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/rhythm.webp);
+}
+
+.carta:nth-child(150){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/mariorpg.png);
+}
+
+.carta:nth-child(151){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/dragxdrive.webp);
+}
+
+.carta:nth-child(152){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/bloodborne.jpg);
+}
+
+.carta:nth-child(153){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/marvel.jpg);
+}
+
+.carta:nth-child(154){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/toad.jpg);
+}
+
+.carta:nth-child(155){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/ultrakill.png);
+}
+
+.carta:nth-child(156){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/portal.jpg);
+}
+
+.carta:nth-child(157){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/portal2.jpg);
+}
+
+.carta:nth-child(158){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/xenoblade1.webp);
+}
+
+.carta:nth-child(159){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/xenoblade2.jpg);
+}
+
+.carta:nth-child(160){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/xenobladex.jpg);
+}
+
+.carta:nth-child(161){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/splitfiction.png);
+}
+
+.carta:nth-child(162){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/celeste.jpg);
+}
+
+.carta:nth-child(163){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/outerwilds.webp);
+}
+
+.carta:nth-child(164){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/finalfantasy.webp);
+}
+
+.carta:nth-child(165){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/p4g.webp);
+}
+
+.carta:nth-child(166){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/p3r.webp);
+}
+
+.carta:nth-child(167){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/sonicracing.webp);
+}
+
+.carta:nth-child(168){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/sonicforces.webp);
+}
+
+.carta:nth-child(169){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/sonicorigins.jpg);
+}
+
+.carta:nth-child(170){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/stardew.png);
+}
+
+.carta:nth-child(171){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/hades2.jpeg);
+}
+
+.carta:nth-child(172){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/spiderman1.jpg);
+}
+
+.carta:nth-child(173){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/balatro.jpg);
+}
+
+.carta:nth-child(174){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/ds2.jpg);
+}
+
+.carta:nth-child(175){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/metalgearv.jpg);
+}
+
+.carta:nth-child(176){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/silentf.png);
+}
+
+.carta:nth-child(177){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/scrollsiv.png);
+}
+
+.carta:nth-child(178){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/scrollsv.png);
+}
+
+.carta:nth-child(179){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/lethal.jpg);
+}
+
+.carta:nth-child(180){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/alan2.jpg);
+}
+
+.carta:nth-child(181){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/witcher2.webp);
+}
+
+.carta:nth-child(182){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/witcher3.jpg);
+}
+
+.carta:nth-child(183){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/deathstranding.jpg);
+}
 
 
 #caracteristicas .container{

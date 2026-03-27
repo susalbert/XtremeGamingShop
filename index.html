@@ -15,7 +15,7 @@
         .search-container {
             display: flex;
             justify-content: center;
-            margin: 20px 0 40px;
+            margin: 20px 0 30px;
             padding: 0 20px;
         }
         
@@ -325,13 +325,7 @@
 
 <section id="hero">
     <h1>Compra tarjetas, videojuegos, dispositivos y DLC!</h1>
-    <div class="search-container">
-        <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Buscar videojuegos...">
-            <button id="searchButton">Buscar</button>
-</div>
-</div>
-<button onclick="document.getElementById('VideojuegosMas').scrollIntoView({behavior: 'smooth'})">Empieza a buscar</button>
+    <button onclick="document.getElementById('VideojuegosMas').scrollIntoView({behavior: 'smooth'})">Empieza a buscar</button>
 </section>
 
 <section id="tienda">
@@ -346,6 +340,14 @@
 
 <section id="VideojuegosMas">
     <div class="container">
+        <!-- BUSCADOR JUSTO ARRIBA DEL FILTRO -->
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Buscar videojuegos...">
+                <button id="searchButton">Buscar</button>
+            </div>
+        </div>
+        
         <div class="filtros-container">
             <div class="filtro-titulo" style="color: white; background-color: #333; padding: 10px 20px; border-radius: 25px; font-weight: bold;">
                 Filtrar por plataforma:
@@ -372,7 +374,7 @@
 
         <div class="programas">
 
-            <div class="carta game-card" data-name="Super Mario Odyssey" data-genre="Platformer 3D" data-plataformas="nintendo,vr" data-precio="59.99">
+              <div class="carta game-card" data-name="Super Mario Odyssey" data-genre="Platformer 3D" data-plataformas="nintendo,vr" data-precio="59.99">
                 <h3 style="font-size: 1.1em; line-height: 1.3;">Super Mario Odyssey (Fisico)
                     <span class="plataforma-badge nintendo-badge">Nintendo</span>
                     <span class="plataforma-badge vr-badge">VR</span>
@@ -1683,14 +1685,14 @@
                 </div>
             </div>
 
-            <div class="carta game-card" data-name="Resident Evil 7: Biohazard" data-genre="Survival Horror" data-plataformas="playstation,xbox,steam" data-precio="39.99">
-                <h3 style="font-size: 1.1em; line-height: 1.3;">Resident Evil 7: Biohazard (Fisico)
+            <div class="carta game-card" data-name="Resident Evil: Biohazard" data-genre="Survival Horror" data-plataformas="playstation,xbox,steam" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Resident Evil: Biohazard (Fisico)
                     <span class="plataforma-badge playstation-badge">PS</span>
                     <span class="plataforma-badge xbox-badge">XB</span>
                     <span class="plataforma-badge steam-badge">Steam</span>
                 </h3>
                 <p style="font-size: 0.95em;">Survival Horror</p>
-                <button onclick="addToCartSimple('Resident Evil 7: Biohazard', 39.99)">Añadir al carro</button>
+                <button onclick="addToCartSimple('Resident Evil: Biohazard', 39.99)">Añadir al carro</button>
                 <div class="puntos-ganados">
                     <span class="puntos-icono">⭐</span>
                     <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
@@ -1961,6 +1963,922 @@
                 <div class="puntos-ganados">
                     <span class="puntos-icono">⭐</span>
                     <span>Ganas <span class="puntos-cantidad">150</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Yoshi's Crafted World" data-genre="Plataformas" data-plataformas="nintendo" data-precio="59.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Yoshi's Crafted World (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Plataformas / Aventura</p>
+                <button onclick="addToCartSimple('Yoshi\'s Crafted World', 59.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">600</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Princess Peach: Showtime!" data-genre="Aventura" data-plataformas="nintendo" data-precio="59.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Princess Peach: Showtime! (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Aventura / Acción</p>
+                <button onclick="addToCartSimple('Princess Peach: Showtime!', 59.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">600</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Yakuza: Like a Dragon" data-genre="RPG" data-plataformas="playstation,xbox,steam" data-precio="59.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Yakuza: Like a Dragon (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">RPG / Acción</p>
+                <button onclick="addToCartSimple('Yakuza: Like a Dragon', 59.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">600</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Super Meat Boy" data-genre="Plataformas" data-plataformas="nintendo,playstation,xbox,steam" data-precio="14.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Super Meat Boy (Codigo Digital, Global)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Plataformas / Precisión</p>
+                <button onclick="addToCartSimple('Super Meat Boy', 14.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">150</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Guitar Hero" data-genre="Ritmo" data-plataformas="playstation,xbox" data-precio="49.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Guitar Hero (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                </h3>
+                <p style="font-size: 0.95em;">Ritmo / Música</p>
+                <button onclick="addToCartSimple('Guitar Hero', 49.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">500</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Borderlands 3" data-genre="Looter Shooter" data-plataformas="playstation,xbox,steam,epic" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Borderlands 3 (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                    <span class="plataforma-badge epic-badge">Epic Games</span>
+                </h3>
+                <p style="font-size: 0.95em;">Looter shooter / Acción</p>
+                <button onclick="addToCartSimple('Borderlands 3', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Metroid Prime Remastered" data-genre="Acción" data-plataformas="nintendo" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Metroid Prime Remastered (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Acción / Aventura / FPS</p>
+                <button onclick="addToCartSimple('Metroid Prime Remastered', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Mortal Kombat 11" data-genre="Lucha" data-plataformas="nintendo,playstation,xbox,steam" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Mortal Kombat 11 (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Lucha</p>
+                <button onclick="addToCartSimple('Mortal Kombat 11', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+           <div class="carta game-card" data-name="Bayonetta 1 Remastered" data-genre="Acción" data-plataformas="nintendo,playstation,xbox,steam" data-precio="29.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Bayonetta 1 Remastered (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Acción / Hack and Slash</p>
+                <button onclick="addToCartSimple('Bayonetta 1 Remastered', 29.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">300</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Bayonetta 2" data-genre="Acción" data-plataformas="nintendo" data-precio="49.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Bayonetta 2 (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Acción / Hack and Slash</p>
+                <button onclick="addToCartSimple('Bayonetta 2', 49.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">500</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Bayonetta 3" data-genre="Acción" data-plataformas="nintendo" data-precio="59.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Bayonetta 3 (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Acción / Hack and Slash</p>
+                <button onclick="addToCartSimple('Bayonetta 3', 59.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">600</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="FNaF Help Wanted" data-genre="Terror" data-plataformas="nintendo,playstation,xbox,steam" data-precio="29.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">FNaF Help Wanted (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Terror / Realidad Virtual</p>
+                <button onclick="addToCartSimple('FNaF Help Wanted', 29.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">300</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="FNaF Help Wanted 2" data-genre="Terror" data-plataformas="playstation,steam" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">FNaF Help Wanted 2 (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Terror / Realidad Virtual</p>
+                <button onclick="addToCartSimple('FNaF Help Wanted 2', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="FNaF Security Breach" data-genre="Terror" data-plataformas="nintendo,playstation,xbox,steam,epic" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">FNaF Security Breach (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                    <span class="plataforma-badge epic-badge">Epic Games</span>
+                </h3>
+                <p style="font-size: 0.95em;">Terror / Mundo abierto</p>
+                <button onclick="addToCartSimple('FNaF Security Breach', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="FNaF Secret of the Mimic" data-genre="Terror" data-plataformas="playstation,xbox,steam,epic" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">FNaF Secret of the Mimic (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                    <span class="plataforma-badge epic-badge">Epic Games</span>
+                </h3>
+                <p style="font-size: 0.95em;">Terror / Aventura</p>
+                <button onclick="addToCartSimple('FNaF Secret of the Mimic', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="FNaF Into the Pit" data-genre="Terror" data-plataformas="nintendo,playstation,xbox,steam,epic" data-precio="24.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">FNaF Into the Pit (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                    <span class="plataforma-badge epic-badge">Epic Games</span>
+                </h3>
+                <p style="font-size: 0.95em;">Terror / Aventura</p>
+                <button onclick="addToCartSimple('FNaF Into the Pit', 24.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">250</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Kirby Dream Buffet" data-genre="Carreras" data-plataformas="nintendo" data-precio="14.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Kirby Dream Buffet (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Carreras / Multijugador</p>
+                <button onclick="addToCartSimple('Kirby Dream Buffet', 14.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">150</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Kirby Fighters 2" data-genre="Lucha" data-plataformas="nintendo" data-precio="19.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Kirby Fighters 2 (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Lucha / Multijugador</p>
+                <button onclick="addToCartSimple('Kirby Fighters 2', 19.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">200</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Kirby Air Riders" data-genre="Carreras" data-plataformas="nintendo" data-precio="59.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Kirby Air Riders (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Carreras / Acción</p>
+                <button onclick="addToCartSimple('Kirby Air Riders', 59.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">600</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Super Mario 3D All-Stars" data-genre="Plataformas" data-plataformas="nintendo" data-precio="59.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Super Mario 3D All-Stars (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Plataformas 3D / Colección</p>
+                <button onclick="addToCartSimple('Super Mario 3D All-Stars', 59.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">600</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Super Mario Galaxy" data-genre="Plataformas" data-plataformas="nintendo" data-precio="59.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Super Mario Galaxy (Codigo Digital, Global)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Plataformas 3D</p>
+                <button onclick="addToCartSimple('Super Mario Galaxy', 59.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">600</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Super Mario Galaxy 2" data-genre="Plataformas" data-plataformas="nintendo" data-precio="59.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Super Mario Galaxy 2 (Codigo Digital, Global)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Plataformas 3D</p>
+                <button onclick="addToCartSimple('Super Mario Galaxy 2', 59.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">600</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Astro Bot" data-genre="Plataformas" data-plataformas="playstation" data-precio="59.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Astro Bot (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                </h3>
+                <p style="font-size: 0.95em;">Plataformas 3D / Aventura</p>
+                <button onclick="addToCartSimple('Astro Bot', 59.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">600</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Super Monkey Ball: Banana Rumble" data-genre="Acción" data-plataformas="nintendo" data-precio="49.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Super Monkey Ball: Banana Rumble (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Acción / Plataformas</p>
+                <button onclick="addToCartSimple('Super Monkey Ball: Banana Rumble', 49.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">500</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Kingdom Hearts IV" data-genre="RPG" data-plataformas="playstation,xbox,steam" data-precio="69.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Kingdom Hearts IV (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">RPG / Acción</p>
+                <button onclick="addToCartSimple('Kingdom Hearts IV', 69.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">700</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="WarioWare: Move It!" data-genre="Fiesta" data-plataformas="nintendo" data-precio="49.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">WarioWare: Move It! (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Minijuegos / Fiesta</p>
+                <button onclick="addToCartSimple('WarioWare: Move It!', 49.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">500</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="WarioWare: Get It Together!" data-genre="Fiesta" data-plataformas="nintendo" data-precio="49.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">WarioWare: Get It Together! (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Minijuegos / Fiesta</p>
+                <button onclick="addToCartSimple('WarioWare: Get It Together!', 49.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">500</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="1-2-Switch" data-genre="Fiesta" data-plataformas="nintendo" data-precio="49.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">1-2-Switch (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Minijuegos / Fiesta</p>
+                <button onclick="addToCartSimple('1-2-Switch', 49.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">500</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Everybody 1-2-Switch!" data-genre="Fiesta" data-plataformas="nintendo" data-precio="29.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Everybody 1-2-Switch! (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Minijuegos / Fiesta</p>
+                <button onclick="addToCartSimple('Everybody 1-2-Switch!', 29.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">300</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Nintendo Switch Sports" data-genre="Deportes" data-plataformas="nintendo" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Nintendo Switch Sports (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Deportes / Multijugador</p>
+                <button onclick="addToCartSimple('Nintendo Switch Sports', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Assassin's Creed Shadows" data-genre="Acción" data-plataformas="playstation,xbox,steam" data-precio="69.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Assassin's Creed Shadows (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Acción / Sigilo</p>
+                <button onclick="addToCartSimple('Assassin\'s Creed Shadows', 69.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">700</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Dead Space Remake" data-genre="Survival Horror" data-plataformas="playstation,xbox,steam" data-precio="69.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Dead Space Remake (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Survival Horror / Ciencia ficción</p>
+                <button onclick="addToCartSimple('Dead Space Remake', 69.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">700</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Shadow of the Tomb Raider" data-genre="Acción" data-plataformas="playstation,xbox,steam" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Shadow of the Tomb Raider (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Acción / Aventura</p>
+                <button onclick="addToCartSimple('Shadow of the Tomb Raider', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Indiana Jones and the Great Circle" data-genre="Acción" data-plataformas="xbox,steam" data-precio="69.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Indiana Jones and the Great Circle (Fisico)
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Acción / Aventura</p>
+                <button onclick="addToCartSimple('Indiana Jones and the Great Circle', 69.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">700</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Rhythm Heaven Groove" data-genre="Ritmo" data-plataformas="nintendo" data-precio="49.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Rhythm Heaven Groove (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Ritmo / Minijuegos</p>
+                <button onclick="addToCartSimple('Rhythm Heaven Groove', 49.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">500</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Super Mario RPG" data-genre="RPG" data-plataformas="nintendo" data-precio="59.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Super Mario RPG (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">RPG por turnos</p>
+                <button onclick="addToCartSimple('Super Mario RPG', 59.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">600</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Drag x Drive" data-genre="Deportes" data-plataformas="nintendo" data-precio="19.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Drag x Drive (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Deportes / Multijugador</p>
+                <button onclick="addToCartSimple('Drag x Drive', 19.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">200</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Bloodborne" data-genre="RPG" data-plataformas="playstation" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Bloodborne (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                </h3>
+                <p style="font-size: 0.95em;">RPG de acción / Soulslike</p>
+                <button onclick="addToCartSimple('Bloodborne', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Marvel's Guardians of the Galaxy" data-genre="Acción" data-plataformas="playstation,xbox,steam,epic" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Marvel's Guardians of the Galaxy (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                    <span class="plataforma-badge epic-badge">Epic Games</span>
+                </h3>
+                <p style="font-size: 0.95em;">Acción / Aventura</p>
+                <button onclick="addToCartSimple('Marvel\'s Guardians of the Galaxy', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Captain Toad: Treasure Tracker" data-genre="Puzzles" data-plataformas="nintendo" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Captain Toad: Treasure Tracker (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">Puzzles / Aventura</p>
+                <button onclick="addToCartSimple('Captain Toad: Treasure Tracker', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="ULTRAKILL" data-genre="FPS" data-plataformas="steam" data-precio="24.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">ULTRAKILL (Codigo Digital, Global)
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">FPS / Acción frenética</p>
+                <button onclick="addToCartSimple('ULTRAKILL', 24.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">250</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Portal" data-genre="Puzzles" data-plataformas="playstation,xbox,steam" data-precio="9.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Portal (Codigo Digital, Global)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Puzzles / Plataformas</p>
+                <button onclick="addToCartSimple('Portal', 9.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">100</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Portal 2" data-genre="Puzzles" data-plataformas="playstation,xbox,steam" data-precio="9.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Portal 2 (Codigo Digital, Global)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Puzzles / Plataformas</p>
+                <button onclick="addToCartSimple('Portal 2', 9.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">100</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Xenoblade Chronicles: Definitive Edition" data-genre="RPG" data-plataformas="nintendo" data-precio="59.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Xenoblade Chronicles: Definitive Edition (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">RPG de acción / Mundo abierto</p>
+                <button onclick="addToCartSimple('Xenoblade Chronicles: Definitive Edition', 59.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">600</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Xenoblade Chronicles 2" data-genre="RPG" data-plataformas="nintendo" data-precio="59.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Xenoblade Chronicles 2 (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">RPG de acción / Mundo abierto</p>
+                <button onclick="addToCartSimple('Xenoblade Chronicles 2', 59.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">600</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Xenoblade Chronicles X: Definitive Edition" data-genre="RPG" data-plataformas="nintendo" data-precio="59.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Xenoblade Chronicles X: Definitive Edition (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                </h3>
+                <p style="font-size: 0.95em;">RPG de acción / Ciencia ficción</p>
+                <button onclick="addToCartSimple('Xenoblade Chronicles X: Definitive Edition', 59.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">600</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Split Fiction" data-genre="Aventura" data-plataformas="playstation,xbox,steam" data-precio="49.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Split Fiction (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Aventura / Cooperativo</p>
+                <button onclick="addToCartSimple('Split Fiction', 49.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">500</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Celeste" data-genre="Plataformas" data-plataformas="nintendo,playstation,xbox,steam" data-precio="19.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Celeste (Codigo Digital, Global)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Plataformas / Precisión</p>
+                <button onclick="addToCartSimple('Celeste', 19.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">200</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Outer Wilds" data-genre="Aventura" data-plataformas="playstation,xbox,steam" data-precio="24.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Outer Wilds (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Aventura / Exploración</p>
+                <button onclick="addToCartSimple('Outer Wilds', 24.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">250</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Final Fantasy Tactics" data-genre="RPG" data-plataformas="playstation,steam" data-precio="19.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Final Fantasy Tactics (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">RPG por turnos / Estrategia</p>
+                <button onclick="addToCartSimple('Final Fantasy Tactics', 19.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">200</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Persona 4 Golden" data-genre="RPG" data-plataformas="playstation,steam" data-precio="19.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Persona 4 Golden (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">RPG / Social Sim</p>
+                <button onclick="addToCartSimple('Persona 4 Golden', 19.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">200</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Persona 3 Reload" data-genre="RPG" data-plataformas="playstation,xbox,steam" data-precio="69.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Persona 3 Reload (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">RPG / Social Sim</p>
+                <button onclick="addToCartSimple('Persona 3 Reload', 69.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">700</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Team Sonic Racing" data-genre="Carreras" data-plataformas="nintendo,playstation,xbox,steam" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Team Sonic Racing (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Carreras arcade</p>
+                <button onclick="addToCartSimple('Team Sonic Racing', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Sonic Forces" data-genre="Plataformas" data-plataformas="nintendo,playstation,xbox,steam" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Sonic Forces (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Plataformas 3D</p>
+                <button onclick="addToCartSimple('Sonic Forces', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Sonic Origins" data-genre="Plataformas" data-plataformas="nintendo,playstation,xbox,steam" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Sonic Origins (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Plataformas 2D / Colección</p>
+                <button onclick="addToCartSimple('Sonic Origins', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Stardew Valley" data-genre="Simulación" data-plataformas="nintendo,playstation,xbox,steam" data-precio="14.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Stardew Valley (Fisico)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Simulación / RPG</p>
+                <button onclick="addToCartSimple('Stardew Valley', 14.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">150</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Hades 2" data-genre="Roguelike" data-plataformas="steam" data-precio="29.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Hades 2 (Codigo Digital)
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Roguelike / Acción</p>
+                <button onclick="addToCartSimple('Hades 2', 29.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">300</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Marvel's Spider-Man Remastered" data-genre="Acción" data-plataformas="playstation,steam" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Marvel's Spider-Man Remastered (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Acción / Mundo abierto</p>
+                <button onclick="addToCartSimple('Marvel\'s Spider-Man Remastered', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Balatro" data-genre="Roguelike" data-plataformas="nintendo,playstation,xbox,steam" data-precio="14.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Balatro (Codigo Digital, Digital)
+                    <span class="plataforma-badge nintendo-badge">Nintendo</span>
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Roguelike / Cartas</p>
+                <button onclick="addToCartSimple('Balatro', 14.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">150</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Death Stranding 2: On The Beach" data-genre="Acción" data-plataformas="playstation" data-precio="69.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Death Stranding 2: On The Beach (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                </h3>
+                <p style="font-size: 0.95em;">Acción / Aventura</p>
+                <button onclick="addToCartSimple('Death Stranding 2: On The Beach', 69.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">700</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Metal Gear Solid V: The Phantom Pain" data-genre="Acción" data-plataformas="playstation,xbox,steam" data-precio="19.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Metal Gear Solid V: The Phantom Pain (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Acción / Sigilo / Mundo abierto</p>
+                <button onclick="addToCartSimple('Metal Gear Solid V: The Phantom Pain', 19.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">200</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Silent Hill f" data-genre="Terror" data-plataformas="playstation,xbox,steam" data-precio="69.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Silent Hill f (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Terror psicológico</p>
+                <button onclick="addToCartSimple('Silent Hill f', 69.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">700</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="The Elder Scrolls IV: Oblivion Remastered" data-genre="RPG" data-plataformas="playstation,xbox,steam" data-precio="49.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">The Elder Scrolls IV: Oblivion Remastered (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">RPG de acción / Mundo abierto</p>
+                <button onclick="addToCartSimple('The Elder Scrolls IV: Oblivion Remastered', 49.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">500</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="The Elder Scrolls V: Skyrim" data-genre="RPG" data-plataformas="playstation,xbox,steam" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">The Elder Scrolls V: Skyrim (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">RPG de acción / Mundo abierto</p>
+                <button onclick="addToCartSimple('The Elder Scrolls V: Skyrim', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Lethal Company" data-genre="Terror" data-plataformas="steam" data-precio="9.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Lethal Company (Codigo Digital, Global)
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Terror / Cooperativo</p>
+                <button onclick="addToCartSimple('Lethal Company', 9.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">100</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Alan Wake 2" data-genre="Terror" data-plataformas="playstation,xbox,steam" data-precio="59.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Alan Wake 2 (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Terror psicológico / Acción</p>
+                <button onclick="addToCartSimple('Alan Wake 2', 59.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">600</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="The Witcher 2: Assassins of Kings" data-genre="RPG" data-plataformas="playstation,xbox,steam" data-precio="19.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">The Witcher 2: Assassins of Kings (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">RPG de acción / Mundo abierto</p>
+                <button onclick="addToCartSimple('The Witcher 2: Assassins of Kings', 19.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">200</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="The Witcher 3: Wild Hunt" data-genre="RPG" data-plataformas="playstation,xbox,steam" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">The Witcher 3: Wild Hunt (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge xbox-badge">XB</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">RPG de acción / Mundo abierto</p>
+                <button onclick="addToCartSimple('The Witcher 3: Wild Hunt', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
+                </div>
+            </div>
+
+            <div class="carta game-card" data-name="Death Stranding" data-genre="Acción" data-plataformas="playstation,steam" data-precio="39.99">
+                <h3 style="font-size: 1.1em; line-height: 1.3;">Death Stranding (Fisico)
+                    <span class="plataforma-badge playstation-badge">PS</span>
+                    <span class="plataforma-badge steam-badge">Steam</span>
+                </h3>
+                <p style="font-size: 0.95em;">Acción / Aventura / Mundo abierto</p>
+                <button onclick="addToCartSimple('Death Stranding', 39.99)">Añadir al carro</button>
+                <div class="puntos-ganados">
+                    <span class="puntos-icono">⭐</span>
+                    <span>Ganas <span class="puntos-cantidad">400</span> Puntos Xtreme</span>
                 </div>
             </div>
 
