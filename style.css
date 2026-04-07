@@ -1257,6 +1257,24 @@ header a:hover{
         url(media/deathstranding.jpg);
 }
 
+.carta:nth-child(184){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/half2.jpg);
+}
+
+.carta:nth-child(185){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/farcry6.jpg);
+}
+
+.carta:nth-child(186){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/fallout76.jpg);
+}
+
 
 #caracteristicas .container{
     text-align: center;
