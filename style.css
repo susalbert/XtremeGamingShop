@@ -1275,6 +1275,60 @@ header a:hover{
         url(media/fallout76.jpg);
 }
 
+.carta:nth-child(187){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/mirage.jpg);
+}
+
+.carta:nth-child(188){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/starwars.82552dc2-86e7-4009-8fcc-3a2e12cc12f6);
+}
+
+.carta:nth-child(189){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/antonblast.jpg);
+}
+
+.carta:nth-child(190){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/penny.jpg);
+}
+
+.carta:nth-child(191){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/borderlands2.jpg);
+}
+
+.carta:nth-child(192){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/baldur.82a9ea41-c628-4d02-8a0f-d0304eba31c7);
+}
+
+.carta:nth-child(193){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/kingdomcome.jpg);
+}
+
+.carta:nth-child(194){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/stray.13c1afe0-c06d-46d6-bfdc-6009527cbaff);
+}
+
+.carta:nth-child(195){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/horizonforb.jpg);
+}
+
 
 #caracteristicas .container{
     text-align: center;
