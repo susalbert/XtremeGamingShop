@@ -1329,6 +1329,24 @@ header a:hover{
         url(media/horizonforb.jpg);
 }
 
+.carta:nth-child(196){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/megaman.webp);
+}
+
+.carta:nth-child(197){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/forza.jpg);
+}
+
+.carta:nth-child(198){
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url(media/finalfantasyvii.png);
+}
+
 
 #caracteristicas .container{
     text-align: center;
