@@ -18,6 +18,11 @@
             font-family: 'Fredoka', sans-serif;
         }
         button:hover{ background-color: rgba(255, 72, 0, 0.8); }
+        button:disabled{
+            background-color: #ccc;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
         .container{ max-width: 1400px; margin: auto; }
         .color-acento{ color:orangered; }
 
@@ -53,6 +58,28 @@
         .cantidad-control{ display: flex; align-items: center; gap: 10px; margin-right: 20px; }
         .cantidad-btn{ width: 30px; height: 30px; border-radius: 50%; background-color: #ddd; border: none; font-weight: bold; cursor: pointer; font-family: 'Fredoka', sans-serif; }
         .eliminar-btn{ background-color: #ff3333; padding: 8px 15px; font-size: 0.9em; font-family: 'Fredoka', sans-serif; }
+
+        .carrito-vacio {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .carrito-vacio h3 {
+            font-size: 2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .carrito-vacio p {
+            color: #999;
+            margin-bottom: 30px;
+        }
+        .btn-seguir-comprando {
+            background-color: orangered;
+            padding: 15px 40px;
+            font-size: 1.2em;
+        }
 
         .resumen{ background-color: #f5f5f5; padding: 25px; border-radius: 10px; margin-top: 30px; }
         .resumen-linea{ display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #ddd; font-family: 'Fredoka', sans-serif; }
@@ -178,101 +205,105 @@
     <div class="container">
         <h2>Productos en el Carrito</h2>
         
-        <div style="max-width: 1000px; margin: 0 auto;">
-            <div class="carrito-item" data-precio="59.99">
-                <img src="media/cappydesktop.png" class="item-imagen">
-                <div class="item-info">
-                    <h3>Super Mario Odyssey</h3>
-                    <p class="item-detalles">Platformer 3D - Nintendo Switch</p>
-                    <p class="item-precio">$<span class="precio-total-item">59.99</span></p>
-                </div>
-                <div class="cantidad-control">
-                    <button class="cantidad-btn menos">-</button>
-                    <span style="font-weight:bold" class="cantidad">1</span>
-                    <button class="cantidad-btn mas">+</button>
-                </div>
-                <button class="eliminar-btn">Eliminar</button>
-            </div>
-            
-            <div class="carrito-item" data-precio="59.99">
-                <img src="media/battledesktop.png" class="item-imagen">
-                <div class="item-info">
-                    <h3>Battlefield 6 - Standard Edition</h3>
-                    <p class="item-detalles">FPS - PC</p>
-                    <p class="item-precio">$<span class="precio-total-item">59.99</span></p>
-                </div>
-                <div class="cantidad-control">
-                    <button class="cantidad-btn menos">-</button>
-                    <span style="font-weight:bold" class="cantidad">1</span>
-                    <button class="cantidad-btn mas">+</button>
-                </div>
-                <button class="eliminar-btn">Eliminar</button>
-            </div>
-            
-            <div class="puntos-section">
-                <h3>🎮 Canjear Puntos Xtreme</h3>
-                <div class="puntos-disponibles">
-                    <span>Tus puntos disponibles:</span>
-                    <span class="puntos-valor" id="puntos-disponibles">1,250</span>
-                </div>
-                <div class="puntos-input">
-                    <input type="text" id="puntos" placeholder="Ej: 100, 200, 300... (máx 1000)" maxlength="4" onkeypress="return soloNumeros(event)" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-                    <button id="aplicar-puntos" class="puntos-btn">Canjear</button>
-                </div>
-                <div id="puntos-mensaje" class="puntos-mensaje"></div>
-                <p style="font-size: 0.85em; color: #666; margin-top: 10px;">
-                    💡 100 puntos = $1 de descuento | Máximo 1000 puntos ($10).
-                    Por cada compra recibes puntos equivalentes al 10% del total (ej: $100 = 1,000 puntos)
-                </p>
-            </div>
-            
-            <div class="cupon-section">
-                <h3>Código de descuento [Limitado a 1 por compra]</h3>
-                <div class="cupon-input">
-                    <input type="text" id="cupon" placeholder="Ingresa código">
-                    <button id="aplicar-cupon" class="cupon-btn">Aplicar</button>
-                </div>
-                <div id="cupon-mensaje" class="cupon-mensaje"></div>
-            </div>
-            
-            <div class="resumen">
-                <div class="resumen-linea">
-                    <span>Subtotal:</span>
-                    <span id="subtotal">$119.98</span>
-                </div>
-                <div class="resumen-linea" id="linea-descuento-puntos" style="display:none;">
-                    <span>Descuento puntos:</span>
-                    <span id="descuento-puntos">-$0.00</span>
-                </div>
-                <div class="resumen-linea" id="linea-descuento-cupon" style="display:none;">
-                    <span>Descuento cupón (<span id="cupon-porcentaje">10</span>%):</span>
-                    <span id="descuento-cupon">-$0.00</span>
-                </div>
-                <div class="resumen-linea">
-                    <span>Impuestos (10%):</span>
-                    <span id="impuestos">$12.00</span>
-                </div>
-                <div class="resumen-linea">
-                    <span>Envío:</span>
-                    <span>$0.00</span>
-                </div>
-                <div class="resumen-linea">
-                    <span>Total:</span>
-                    <span id="total">$131.98</span>
+        <div style="max-width: 1000px; margin: 0 auto;" id="carrito-container">
+            <div id="productos-container">
+                <div class="carrito-item" data-precio="59.99">
+                    <img src="media/cappydesktop.png" class="item-imagen">
+                    <div class="item-info">
+                        <h3>Super Mario Odyssey</h3>
+                        <p class="item-detalles">Platformer 3D - Nintendo Switch</p>
+                        <p class="item-precio">$<span class="precio-total-item">59.99</span></p>
+                    </div>
+                    <div class="cantidad-control">
+                        <button class="cantidad-btn menos">-</button>
+                        <span style="font-weight:bold" class="cantidad">1</span>
+                        <button class="cantidad-btn mas">+</button>
+                    </div>
+                    <button class="eliminar-btn">Eliminar</button>
                 </div>
                 
-                <div class="puntos-ganar" id="puntos-ganar">
-                    <span class="puntos-label">
-                        <span class="puntos-icono">⭐</span>
-                        <span>Puntos Xtreme que ganarás:</span>
-                    </span>
-                    <span class="puntos-cantidad" id="puntos-cantidad">1,320</span>
+                <div class="carrito-item" data-precio="59.99">
+                    <img src="media/battledesktop.png" class="item-imagen">
+                    <div class="item-info">
+                        <h3>Battlefield 6 - Standard Edition</h3>
+                        <p class="item-detalles">FPS - PC</p>
+                        <p class="item-precio">$<span class="precio-total-item">59.99</span></p>
+                    </div>
+                    <div class="cantidad-control">
+                        <button class="cantidad-btn menos">-</button>
+                        <span style="font-weight:bold" class="cantidad">1</span>
+                        <button class="cantidad-btn mas">+</button>
+                    </div>
+                    <button class="eliminar-btn">Eliminar</button>
                 </div>
             </div>
             
-            <div style="display: flex; justify-content: space-between; margin-top: 30px;">
-                <button onclick="location.href='index.html#VideojuegosMas'">Seguir Comprando</button>
-                <button onclick="location.href='pago.html'" style="font-size: 1.2em; padding: 15px 40px;">Proceder al Pago</button>             
+            <div id="secciones-accion">
+                <div class="puntos-section">
+                    <h3>🎮 Canjear Puntos Xtreme</h3>
+                    <div class="puntos-disponibles">
+                        <span>Tus puntos disponibles:</span>
+                        <span class="puntos-valor" id="puntos-disponibles">1,250</span>
+                    </div>
+                    <div class="puntos-input">
+                        <input type="text" id="puntos" placeholder="Ej: 100, 200, 300... (máx 1000)" maxlength="4" onkeypress="return soloNumeros(event)" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                        <button id="aplicar-puntos" class="puntos-btn">Canjear</button>
+                    </div>
+                    <div id="puntos-mensaje" class="puntos-mensaje"></div>
+                    <p style="font-size: 0.85em; color: #666; margin-top: 10px;">
+                        💡 100 puntos = $1 de descuento | Máximo 1000 puntos ($10).
+                        Por cada compra recibes puntos equivalentes al 10% del total (ej: $100 = 1,000 puntos)
+                    </p>
+                </div>
+                
+                <div class="cupon-section">
+                    <h3>Código de descuento [Limitado a 1 por compra]</h3>
+                    <div class="cupon-input">
+                        <input type="text" id="cupon" placeholder="Ingresa código">
+                        <button id="aplicar-cupon" class="cupon-btn">Aplicar</button>
+                    </div>
+                    <div id="cupon-mensaje" class="cupon-mensaje"></div>
+                </div>
+                
+                <div class="resumen">
+                    <div class="resumen-linea">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$119.98</span>
+                    </div>
+                    <div class="resumen-linea" id="linea-descuento-puntos" style="display:none;">
+                        <span>Descuento puntos:</span>
+                        <span id="descuento-puntos">-$0.00</span>
+                    </div>
+                    <div class="resumen-linea" id="linea-descuento-cupon" style="display:none;">
+                        <span>Descuento cupón (<span id="cupon-porcentaje">10</span>%):</span>
+                        <span id="descuento-cupon">-$0.00</span>
+                    </div>
+                    <div class="resumen-linea">
+                        <span>Impuestos (10%):</span>
+                        <span id="impuestos">$12.00</span>
+                    </div>
+                    <div class="resumen-linea">
+                        <span>Envío:</span>
+                        <span>$0.00</span>
+                    </div>
+                    <div class="resumen-linea">
+                        <span>Total:</span>
+                        <span id="total">$131.98</span>
+                    </div>
+                    
+                    <div class="puntos-ganar" id="puntos-ganar">
+                        <span class="puntos-label">
+                            <span class="puntos-icono">⭐</span>
+                            <span>Puntos Xtreme que ganarás:</span>
+                        </span>
+                        <span class="puntos-cantidad" id="puntos-cantidad">1,320</span>
+                    </div>
+                </div>
+                
+                <div style="display: flex; justify-content: space-between; margin-top: 30px;">
+                    <button onclick="location.href='index.html#VideojuegosMas'">Seguir Comprando</button>
+                    <button id="btn-pagar" onclick="location.href='pago.html'" style="font-size: 1.2em; padding: 15px 40px;">Proceder al Pago</button>             
+                </div>
             </div>
         </div>
     </div>
@@ -308,6 +339,47 @@
     let puntosDisponibles = 1250;
     let puntosCanjeados = 0;
     let puntosActivos = false;
+    
+    function isCarritoVacio() {
+        return document.querySelectorAll('.carrito-item').length === 0;
+    }
+    
+    function actualizarEstadoBotones() {
+        const vacio = isCarritoVacio();
+        const puntosBtn = document.getElementById('aplicar-puntos');
+        const cuponBtn = document.getElementById('aplicar-cupon');
+        const pagarBtn = document.getElementById('btn-pagar');
+        const puntosInput = document.getElementById('puntos');
+        const cuponInput = document.getElementById('cupon');
+        
+        if (vacio) {
+            if (puntosBtn) puntosBtn.disabled = true;
+            if (cuponBtn) cuponBtn.disabled = true;
+            if (pagarBtn) pagarBtn.disabled = true;
+            if (puntosInput) puntosInput.disabled = true;
+            if (cuponInput) cuponInput.disabled = true;
+            
+            if (!document.getElementById('carrito-vacio-msg')) {
+                const productosContainer = document.getElementById('productos-container');
+                const carritoVacioHTML = `
+                    <div id="carrito-vacio-msg" class="carrito-vacio">
+                        <h3>🛒 Tu carrito está vacío</h3>
+                        <p>Parece que aún no has añadido ningún producto.</p>
+                        <button class="btn-seguir-comprando" onclick="location.href='index.html#VideojuegosMas'">Seguir Comprando</button>
+                    </div>
+                `;
+                if (productosContainer) {
+                    productosContainer.innerHTML = carritoVacioHTML;
+                }
+            }
+        } else {
+            if (puntosBtn && !puntosActivos) puntosBtn.disabled = false;
+            if (cuponBtn && !cuponUsado) cuponBtn.disabled = false;
+            if (pagarBtn) pagarBtn.disabled = false;
+            if (puntosInput && !puntosActivos) puntosInput.disabled = false;
+            if (cuponInput && !cuponUsado) cuponInput.disabled = false;
+        }
+    }
     
     function actualizarPuntosAGanar() {
         const totalElement = document.getElementById('total');
@@ -379,6 +451,7 @@
         document.getElementById('puntos-disponibles').textContent = puntosDisponibles.toLocaleString();
         
         actualizarPuntosAGanar();
+        actualizarEstadoBotones();
     }
     
     document.querySelectorAll('.cantidad-btn').forEach(boton => {
@@ -399,12 +472,19 @@
     
     document.querySelectorAll('.eliminar-btn').forEach(boton => {
         boton.onclick = function() {
-            this.closest('.carrito-item').remove();
+            const item = this.closest('.carrito-item');
+            item.remove();
             calcularTotal();
         };
     });
     
     document.getElementById('aplicar-cupon').onclick = function() {
+        if (isCarritoVacio()) {
+            document.getElementById('cupon-mensaje').textContent = "❌ No puedes aplicar cupones cuando el carrito está vacío";
+            document.getElementById('cupon-mensaje').style.color = "red";
+            return;
+        }
+        
         const cupon = document.getElementById('cupon').value.toUpperCase();
         const mensaje = document.getElementById('cupon-mensaje');
         
@@ -441,6 +521,12 @@
     };
     
     document.getElementById('aplicar-puntos').onclick = function() {
+        if (isCarritoVacio()) {
+            document.getElementById('puntos-mensaje').textContent = "❌ No puedes canjear puntos cuando el carrito está vacío";
+            document.getElementById('puntos-mensaje').style.color = "red";
+            return;
+        }
+        
         const puntosInput = document.getElementById('puntos');
         const puntos = parseInt(puntosInput.value);
         const mensaje = document.getElementById('puntos-mensaje');
@@ -489,6 +575,14 @@
         
         calcularTotal();
     };
+    
+    document.getElementById('btn-pagar').addEventListener('click', function(e) {
+        if (isCarritoVacio()) {
+            e.preventDefault();
+            alert('❌ No puedes proceder al pago porque tu carrito está vacío');
+            return false;
+        }
+    });
     
     calcularTotal();
 </script>
