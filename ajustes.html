@@ -186,6 +186,7 @@
             color: inherit;
         }
 
+        /* SECCIONES DE AJUSTES */
         .ajustes-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -460,7 +461,7 @@
             }
             
             #ajustes-hero h1 {
-                font-size: 4em; 
+                font-size: 4em;
             }
             
             #ajustes-hero {
@@ -489,26 +490,26 @@
 
 <header>
     <div class="container">
-        <p class="logo">XtremeGaming</p>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="index.html#VideojuegosMas">Videojuegos</a>
-            <a href="tarjetas.html">Tarjetas Regalo</a>
-            <a href="dispositivos.html">Dispositivos</a>
-            <a href="dlc.html">DLC</a>
-            <a href="index.html#caracteristicas">Sobre Nosotros</a>
-            <a href="perfil.html">Perfil</a>
-            <a href="ajustes.html" style="color: orangered;">Ajustes</a>
-            <a href="carrito.html">Carrito</a>
-            <a href="sugerencias.html">Sugerencias</a>
-            <a href="actualizaciones.html">Registro de Cambios</a>
+        <p class="logo" id="logo-text">XtremeGaming</p>
+        <nav id="nav-menu">
+            <a href="index.html" id="nav-inicio">Inicio</a>
+            <a href="index.html#VideojuegosMas" id="nav-videojuegos">Videojuegos</a>
+            <a href="tarjetas.html" id="nav-tarjetas">Tarjetas Regalo</a>
+            <a href="dispositivos.html" id="nav-dispositivos">Dispositivos</a>
+            <a href="dlc.html" id="nav-dlc">DLC</a>
+            <a href="index.html#caracteristicas" id="nav-sobrenosotros">Sobre Nosotros</a>
+            <a href="perfil.html" id="nav-perfil">Perfil</a>
+            <a href="ajustes.html" id="nav-ajustes" style="color: orangered;">Ajustes</a>
+            <a href="carrito.html" id="nav-carrito">Carrito</a>
+            <a href="sugerencias.html" id="nav-sugerencias">Sugerencias</a>
+            <a href="actualizaciones.html" id="nav-actualizaciones">Registro de Cambios</a>
         </nav>
     </div>
 </header>
 
 <section id="ajustes-hero">
-    <h1>⚙️ Ajustes ⚙️</h1>
-    <p>Personaliza XtremeGaming a tu manera</p>
+    <h1 id="hero-title">⚙️ Ajustes ⚙️</h1>
+    <p id="hero-subtitle">Personaliza XtremeGaming a tu manera</p>
 </section>
 
 <section id="ajustes-contenido">
@@ -683,13 +684,27 @@
 
 <footer>
     <div class="container">
-        <p>&copy; XtremeGaming 2026 - Ajustes de la página</p>
+        <p id="footer-text">&copy; XtremeGaming 2026 - Ajustes de la página</p>
     </div>
 </footer>
 
 <script>
     const textos = {
         es: {
+            logo: "XtremeGaming",
+            nav_inicio: "Inicio",
+            nav_videojuegos: "Videojuegos",
+            nav_tarjetas: "Tarjetas Regalo",
+            nav_dispositivos: "Dispositivos",
+            nav_dlc: "DLC",
+            nav_sobrenosotros: "Sobre Nosotros",
+            nav_perfil: "Perfil",
+            nav_ajustes: "Ajustes",
+            nav_carrito: "Carrito",
+            nav_sugerencias: "Sugerencias",
+            nav_actualizaciones: "Registro de Cambios",
+            hero_title: "⚙️ Ajustes ⚙️",
+            hero_subtitle: "Personaliza XtremeGaming a tu manera",
             config_title: "Configuración de la página",
             apariencia_title: "Apariencia",
             darkmode_title: "Modo Oscuro",
@@ -724,9 +739,24 @@
             guardar_btn: "💾 GUARDAR CAMBIOS",
             modal_title: "✅ ¡Ajustes guardados!",
             modal_text: "Tus preferencias han sido guardadas correctamente.",
-            modal_btn: "Aceptar"
+            modal_btn: "Aceptar",
+            footer_text: "© XtremeGaming 2026 - Ajustes de la página"
         },
         en: {
+            logo: "XtremeGaming",
+            nav_inicio: "Home",
+            nav_videojuegos: "Games",
+            nav_tarjetas: "Gift Cards",
+            nav_dispositivos: "Devices",
+            nav_dlc: "DLC",
+            nav_sobrenosotros: "About Us",
+            nav_perfil: "Profile",
+            nav_ajustes: "Settings",
+            nav_carrito: "Cart",
+            nav_sugerencias: "Suggestions",
+            nav_actualizaciones: "Changelog",
+            hero_title: "⚙️ Settings ⚙️",
+            hero_subtitle: "Customize XtremeGaming your way",
             config_title: "Page Settings",
             apariencia_title: "Appearance",
             darkmode_title: "Dark Mode",
@@ -761,7 +791,8 @@
             guardar_btn: "💾 SAVE CHANGES",
             modal_title: "✅ Settings saved!",
             modal_text: "Your preferences have been saved successfully.",
-            modal_btn: "OK"
+            modal_btn: "OK",
+            footer_text: "© XtremeGaming 2026 - Page Settings"
         }
     };
     
@@ -769,6 +800,23 @@
     
     function aplicarIdioma(idioma) {
         const t = textos[idioma];
+        
+        document.getElementById('logo-text').textContent = t.logo;
+        document.getElementById('nav-inicio').textContent = t.nav_inicio;
+        document.getElementById('nav-videojuegos').textContent = t.nav_videojuegos;
+        document.getElementById('nav-tarjetas').textContent = t.nav_tarjetas;
+        document.getElementById('nav-dispositivos').textContent = t.nav_dispositivos;
+        document.getElementById('nav-dlc').textContent = t.nav_dlc;
+        document.getElementById('nav-sobrenosotros').textContent = t.nav_sobrenosotros;
+        document.getElementById('nav-perfil').textContent = t.nav_perfil;
+        document.getElementById('nav-ajustes').textContent = t.nav_ajustes;
+        document.getElementById('nav-carrito').textContent = t.nav_carrito;
+        document.getElementById('nav-sugerencias').textContent = t.nav_sugerencias;
+        document.getElementById('nav-actualizaciones').textContent = t.nav_actualizaciones;
+        
+        document.getElementById('hero-title').textContent = t.hero_title;
+        document.getElementById('hero-subtitle').textContent = t.hero_subtitle;
+        
         document.getElementById('config-title').textContent = t.config_title;
         document.getElementById('apariencia-title').textContent = t.apariencia_title;
         document.getElementById('darkmode-title').textContent = t.darkmode_title;
@@ -804,6 +852,7 @@
         document.getElementById('modal-title').textContent = t.modal_title;
         document.getElementById('modal-text').textContent = t.modal_text;
         document.getElementById('modal-btn').textContent = t.modal_btn;
+        document.getElementById('footer-text').textContent = t.footer_text;
     }
     
     function aplicarModoOscuro(activado) {
